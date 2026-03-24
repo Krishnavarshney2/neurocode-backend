@@ -1,0 +1,16 @@
+# Secrets & Environments
+.env
+backend/.env
+frontend/.env
+
+# Node.js (Frontend)
+node_modules/
+frontend/node_modules/
+dist/
+.DS_Store
+
+# Python (Backend)
+__pycache__/
+*.pyc
+backend/.venv/
+backend/venv/
