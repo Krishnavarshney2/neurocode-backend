@@ -19,10 +19,10 @@ app = FastAPI()
 # यह Development के लिए बेस्ट है ताकि localhost vs 127.0.0.1 का झगड़ा न हो।
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow ALL origins
+    allow_origins=["*"],  # "*" का मतलब है किसी भी डोमेन से रिक्वेस्ट allow करना
     allow_credentials=True,
-    allow_methods=["*"],  # Allow ALL methods (GET, POST, OPTIONS, etc.)
-    allow_headers=["*"],  # Allow ALL headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Routes जोड़ना
